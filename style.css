@@ -11,6 +11,38 @@
     
 }
 
+/* Fixed Navbar #section-0 */
+
+#section-0
+{
+        display: grid;
+        grid-template-columns: auto auto;
+        justify-content: space-between;
+        align-content: center;
+        height: 50px;
+        position: fixed;
+        top:0;
+    }
+    #section-0 .part-1 a{
+        padding-left: 36px;
+    }
+    
+    #section-0 .part-1 svg{
+        width: 79.8px;
+        height: 79.8px;
+    }
+    
+    #section-0 .part-2{
+       display: grid;
+       grid-template-columns: auto auto auto;
+       gap: 14px;
+       padding-right: 36px;
+       justify-content: end;
+       align-content: center;
+    }
+
+
+
 /* Section-1 */
 
 #section-1{
@@ -62,6 +94,7 @@
     grid-template-columns: auto auto auto;
     align-content: center;
     height: 60px;
+
 }
 
 
@@ -198,6 +231,7 @@
     padding-right: 52px;
     background-color: #F5F5F5;
     height: 60px;
+    
 }
 
 #section-3 a:first-child{
@@ -211,6 +245,65 @@
     line-height: 20px;
 }
 
+/* @media(max-width: 700px){
+    .responsive{
+        width: 100%;
+     }
+     .responsive{
+    
+        position: fixed;
+        background-color: #ffffff;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        justify-content: space-between;
+    }
+    
+    .responsive .part-1{
+        
+      display: grid;
+      padding-left: 10px;
+        
+    }
+    .responsive .part-2{
+        
+        display: grid;
+        grid-template-columns: auto auto auto;
+        gap: 20px ;
+        align-content: center;
+        justify-content: end;
+        padding-right: 15px;
+    }
+} */
 
 
 
+@media only screen and (min-width: 600px){
+    #section-0{
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    #section-1{
+      display: none;  
+    }
+}
+@media only screen and (max-width: 600px) {
+    #section-2{
+      display: none;  
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    #section-3{
+      margin-top: 50px; 
+      padding-right: 0px;
+    }
+    #section-3 a:first-child{
+        font-size: 15px;
+        word-spacing:0px ;
+    }
+    #section-0{
+        width:100%;
+    }
+}
